@@ -1,10 +1,17 @@
-
+//Basic git commands to get started
+******************************************************************************************************************************
 step 1:
 start with any folder in your file system. using cd pathname...
+******************************************************************************************************************************
+******************************************************************************************************************************
 step 2:
 edit description file in .git to name the repository
+******************************************************************************************************************************
+******************************************************************************************************************************
 step 3:
 create files, folders , project you want.
+******************************************************************************************************************************
+******************************************************************************************************************************
 step 4: {staging}
 staging area contains files,folders that are created/edited and are ready to commit
 to the repository.
@@ -15,11 +22,17 @@ git status			// to check current status of the file. if the file is successfully
 git rm --cached filename	//if you want to remove any file from staging area then use this command
 git add .			// to add all created/edited files at once
 git restore filename		// to undo all edits/changes in given file
+******************************************************************************************************************************
+******************************************************************************************************************************
 step 5: {commiting}
 git commit -m "message"		//commits all the staged files with your message/reason/purpose/anything you want to inform
+******************************************************************************************************************************
+******************************************************************************************************************************
 step 6:{logs/history}
 git log				//displays history of previous commits
 git log --oneline		//displays history in short format
+******************************************************************************************************************************
+******************************************************************************************************************************
 step 7:{checkout,revert,reset}
 git checkout commit_ID		//goes back to the status of the repository where that(ref to commit ID) was committed.
 git checkout master		//comes back to present latest commit status of the repository.
@@ -28,3 +41,32 @@ git revert commit_ID		//undoes the given commit (ref to commit_ID) from the repo
 				//this is safe option as we can revert back to reverted commit if we changed our mind.
 git reset commit_ID		//this is like factory reset option. all the commits from the given commit(ref to commit_ID)
 				//are permanently deleted/removed and cannot be traced again.
+******************************************************************************************************************************
+******************************************************************************************************************************
+******************************************************************************************************************************
+//Little advanced git commands
+Step 1: Creating branches
+git branch branchname		//creates a branch. A branch provides user to create new feature that can be added to the present
+				//code depending upon its status i.e if feature works ir not. we can perform commiting on given 
+				//just like we did on master branch. remember: master branch is the main branch of repository.
+git branch -a			//to display all branches and present working branch.(status decided by *)
+git checkout branchname		//to switch to the branch we want to work on.
+git checkout master		//to switch back to main branch.
+git checkout -b branchname	//to switch to the new branch we want to work on. this way we can directly create and switch to that
+				//branch.
+git branch -D branchname	//to delete any branch we want to. But while deleting any branch, first switch back to master branch.
+******************************************************************************************************************************
+******************************************************************************************************************************
+Step 2: Merging branches
+git checkout master		//make sure we are at master branch.
+git merge branchname		//merging a branch to the main branch.
+git branch -d branchname	//to delete/remove merged branch.
+******************************************************************************************************************************
+******************************************************************************************************************************
+Step 3: Dealing with branch conflicts
+When two or more branches try to edit or play with same code area of the master branch, there arises branch conflict.
+To deal with that, manually edit that code/content in conflited area of the master branch.
+Then add and commit it(without giving any message). that's it.
+******************************************************************************************************************************
+******************************************************************************************************************************
+
