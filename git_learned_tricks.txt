@@ -1,0 +1,18 @@
+step 1:
+start with any folder in your file system. using cd pathname...
+step 2:
+edit description file in .git to name the repository
+step 3:
+create files, folders , project you want.
+step 4: {staging}
+staging area contains files,folders that are created/edited and are ready to commit
+to the repository.
+for staging we need to use following commands
+git add filename                //adds given file to staging area,filename should be given with proper extension
+git status			// to check current status of the file. if the file is successfully added then 
+				//the file will be highlighted in green. if unsuccessful then that will be in red.
+git rm --cached filename	//if you want to remove any file from staging area then use this command
+git add .			// to add all created/edited files at once
+git restore filename		// to undo all edits/changes in given file
+step 5: {commiting}
+git commit -m "message"		//commits all the staged files with your message/reason/purpose/anything you want to inform.
