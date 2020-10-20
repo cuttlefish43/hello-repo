@@ -1,3 +1,4 @@
+
 step 1:
 start with any folder in your file system. using cd pathname...
 step 2:
@@ -19,3 +20,11 @@ git commit -m "message"		//commits all the staged files with your message/reason
 step 6:{logs/history}
 git log				//displays history of previous commits
 git log --oneline		//displays history in short format
+step 7:{checkout,revert,reset}
+git checkout commit_ID		//goes back to the status of the repository where that(ref to commit ID) was committed.
+git checkout master		//comes back to present latest commit status of the repository.
+				//NOTE: checkout does not delete the commit.
+git revert commit_ID		//undoes the given commit (ref to commit_ID) from the repository.
+				//this is safe option as we can revert back to reverted commit if we changed our mind.
+git reset commit_ID		//this is like factory reset option. all the commits from the given commit(ref to commit_ID)
+				//are permanently deleted/removed and cannot be traced again.
