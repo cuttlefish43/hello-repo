@@ -15,4 +15,7 @@ git rm --cached filename	//if you want to remove any file from staging area then
 git add .			// to add all created/edited files at once
 git restore filename		// to undo all edits/changes in given file
 step 5: {commiting}
-git commit -m "message"		//commits all the staged files with your message/reason/purpose/anything you want to inform.
+git commit -m "message"		//commits all the staged files with your message/reason/purpose/anything you want to inform
+step 6:{logs/history}
+git log				//displays history of previous commits
+git log --oneline		//displays history in short format
