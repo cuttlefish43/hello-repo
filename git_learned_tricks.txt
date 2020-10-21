@@ -76,6 +76,7 @@ Then add and commit it(without giving any message). that's it.
 step 1:
 login to personal github account where we will push the local repository.
 Create a new repository using new keyword. Give it a name. Copy the link pointing to the github repository.
+Note that copied url has an extension of .git. If not then add manually.
 ******************************************************************************************************************************
 ******************************************************************************************************************************
 step 2:
@@ -88,6 +89,22 @@ git remote add origin copiedurl	//this command sets an alias for copiedurl so th
 step 3 :
 Now when we make new commits in our local repository we just have to push the commits onto the github online using following command.
 git push origin master		//pushing new commits done on master branch
+******************************************************************************************************************************
+******************************************************************************************************************************
+//Cloning repository from github
+******************************************************************************************************************************
+******************************************************************************************************************************
+step 1:
+login github, create repo, add name, README.md file,etc. Now copy the link pointing to this github repository.
+******************************************************************************************************************************
+******************************************************************************************************************************
+step 2:
+go to the directory/folder (of your PC) where you want to create the local version of repository.
+git clone copiedurl		// note that copiedurl has and extension as .git 
+******************************************************************************************************************************
+******************************************************************************************************************************
+step 3:
+cd repository_name			// enter the created directory of given repository name and start working on it like above. 
 ******************************************************************************************************************************
 ******************************************************************************************************************************
 
