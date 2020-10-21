@@ -69,4 +69,25 @@ To deal with that, manually edit that code/content in conflited area of the mast
 Then add and commit it(without giving any message). that's it.
 ******************************************************************************************************************************
 ******************************************************************************************************************************
+//Pushing the local repository to github
+******************************************************************************************************************************
+******************************************************************************************************************************
+******************************************************************************************************************************
+step 1:
+login to personal github account where we will push the local repository.
+Create a new repository using new keyword. Give it a name. Copy the link pointing to the github repository.
+******************************************************************************************************************************
+******************************************************************************************************************************
+step 2:
+git push copiedurl master	//will push the local repository [with only master branch] to github.
+				//but it will first prompt github username and password.
+git remote add origin copiedurl	//this command sets an alias for copiedurl so that we don't have to remember the url everytime
+				//we push new commits to this repository
+******************************************************************************************************************************
+******************************************************************************************************************************
+step 3 :
+Now when we make new commits in our local repository we just have to push the commits onto the github online using following command.
+git push origin master		//pushing new commits done on master branch
+******************************************************************************************************************************
+******************************************************************************************************************************
 
