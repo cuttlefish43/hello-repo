@@ -100,7 +100,30 @@ git clone copiedurl		// note that copiedurl has and extension as .git
 ******************************************************************************************************************************
 ******************************************************************************************************************************
 step 3:
-cd repository_name			// enter the created directory of given repository name and start working on it like above. 
+cd repository_name		// enter the created directory of given repository name and start working on it like above. 
 ******************************************************************************************************************************
 ******************************************************************************************************************************
-
+//working in collaboration
+******************************************************************************************************************************
+******************************************************************************************************************************
+step 1:
+git pull origin master		//update your local repository with the one hosted at github, so as to get cahnges done by
+				//other collaborators in the code/contents of the repository.
+Tip: Always try to use branches to edit/work on different parts of the project when collaborating.
+After commiting any of your branches, don't try to directly merge into the master/parent branch. Because not all collaborators
+will agree with your code and may suggest improvements. Instead push the edited/created branch to remote repository to be seen/
+reviewed by your peers.
+git push origin branchname	//pushes the given branch to remote repository.
+******************************************************************************************************************************
+******************************************************************************************************************************
+Step 2: {pull request}
+when you pushed the updated branch and want to merge it, do a pull request on github to merge the branch with master branch.
+******************************************************************************************************************************
+******************************************************************************************************************************
+Step 3:{review and merge}
+if you are a collaborator and want to review and merge others commit, you can do it with gui tools on github. You will be notified 
+when someone does a commit and wants to merge their commited branch with master branch.
+after merge you(as a reviewer) can delete the branch which no longer required.
+if someone rejected your pull request then you can apply recommended changes on your branch and push it again and request again.
+******************************************************************************************************************************
+******************************************************************************************************************************
