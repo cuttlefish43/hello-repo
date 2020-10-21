@@ -5,14 +5,10 @@ start with any folder in your file system. using cd pathname...
 ******************************************************************************************************************************
 ******************************************************************************************************************************
 step 2:
-edit description file in .git to name the repository
-******************************************************************************************************************************
-******************************************************************************************************************************
-step 3:
 create files, folders , project you want.
 ******************************************************************************************************************************
 ******************************************************************************************************************************
-step 4: {staging}
+step 3: {staging}
 staging area contains files,folders that are created/edited and are ready to commit
 to the repository.
 for staging we need to use following commands
@@ -24,16 +20,16 @@ git add .			// to add all created/edited files at once
 git restore filename		// to undo all edits/changes in given file
 ******************************************************************************************************************************
 ******************************************************************************************************************************
-step 5: {commiting}
+step 4: {commiting}
 git commit -m "message"		//commits all the staged files with your message/reason/purpose/anything you want to inform
 ******************************************************************************************************************************
 ******************************************************************************************************************************
-step 6:{logs/history}
+step 5:{logs/history}
 git log				//displays history of previous commits
 git log --oneline		//displays history in short format
 ******************************************************************************************************************************
 ******************************************************************************************************************************
-step 7:{checkout,revert,reset}
+step 6:{checkout,revert,reset}
 git checkout commit_ID		//goes back to the status of the repository where that(ref to commit ID) was committed.
 git checkout master		//comes back to present latest commit status of the repository.
 				//NOTE: checkout does not delete the commit.
