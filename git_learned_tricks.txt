@@ -127,3 +127,14 @@ after merge you(as a reviewer) can delete the branch which no longer required.
 if someone rejected your pull request then you can apply recommended changes on your branch and push it again and request again.
 ******************************************************************************************************************************
 ******************************************************************************************************************************
+// deleting last n commits
+******************************************************************************************************************************
+******************************************************************************************************************************
+Step 1:
+To delete last 3 commits use:
+git reset --hard HEAD~3            // for deleting last 4 use 4 instead of 3
+
+Step 2:
+Now force the remote repository (stored at github) to make the changes
+git push -f origin main            // if deletion was on another branch then use that brance name
+
