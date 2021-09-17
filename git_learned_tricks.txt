@@ -31,7 +31,7 @@ git log --oneline		//displays history in short format
 ******************************************************************************************************************************
 step 6:{checkout,revert,reset}
 git checkout commit_ID		//goes back to the status of the repository where that(ref to commit ID) was committed.
-git checkout master		//comes back to present latest commit status of the repository.
+git checkout main		//comes back to present latest commit status of the repository.
 				//NOTE: checkout does not delete the commit.
 git revert commit_ID		//undoes the given commit (ref to commit_ID) from the repository.
 				//this is safe option as we can revert back to reverted commit if we changed our mind.
@@ -47,14 +47,14 @@ git branch branchname		//creates a branch. A branch provides user to create new 
 				//just like we did on master branch. remember: master branch is the main branch of repository.
 git branch -a			//to display all branches and present working branch.(status decided by *)
 git checkout branchname		//to switch to the branch we want to work on.
-git checkout master		//to switch back to main branch.
+git checkout main		//to switch back to main branch.
 git checkout -b branchname	//to switch to the new branch we want to work on. this way we can directly create and switch to that
 				//branch.
 git branch -D branchname	//to delete any branch we want to. But while deleting any branch, first switch back to master branch.
 ******************************************************************************************************************************
 ******************************************************************************************************************************
 Step 2: Merging branches
-git checkout master		//make sure we are at master branch.
+git checkout main		//make sure we are at master branch.
 git merge branchname		//merging a branch to the main branch.
 git branch -d branchname	//to delete/remove merged branch.
 ******************************************************************************************************************************
@@ -76,7 +76,7 @@ Note that copied url has an extension of .git. If not then add manually.
 ******************************************************************************************************************************
 ******************************************************************************************************************************
 step 2:
-git push copiedurl master	//will push the local repository [with only master branch] to github.
+git push copiedurl main	//will push the local repository [with only master branch] to github.
 				//but it will first prompt github username and password.
 git remote add origin copiedurl	//this command sets an alias for copiedurl so that we don't have to remember the url everytime
 				//we push new commits to this repository
@@ -84,7 +84,7 @@ git remote add origin copiedurl	//this command sets an alias for copiedurl so th
 ******************************************************************************************************************************
 step 3 :
 Now when we make new commits in our local repository we just have to push the commits onto the github online using following command.
-git push origin master		//pushing new commits done on master branch
+git push origin main		//pushing new commits done on master branch
 ******************************************************************************************************************************
 ******************************************************************************************************************************
 //Cloning repository from github
@@ -107,7 +107,7 @@ cd repository_name		// enter the created directory of given repository name and 
 ******************************************************************************************************************************
 ******************************************************************************************************************************
 step 1:
-git pull origin master		//update your local repository with the one hosted at github, so as to get cahnges done by
+git pull origin main		//update your local repository with the one hosted at github, so as to get cahnges done by
 				//other collaborators in the code/contents of the repository.
 Tip: Always try to use branches to edit/work on different parts of the project when collaborating.
 After commiting any of your branches, don't try to directly merge into the master/parent branch. Because not all collaborators
